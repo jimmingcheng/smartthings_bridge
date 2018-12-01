@@ -1,5 +1,6 @@
 *__pycache__/
 *~
-deploy.zip
+build
 lambda_admin
 resources
+venv
