@@ -15,7 +15,10 @@ package: venv
 
 .PHONY: deploy
 deploy: package
-	aws lambda update-function-code --function-name smartthings_bridge --zip-file 'fileb://build/deploy.zip'
+	aws lambda update-function-code \
+	--function-name $(ALEXA_FUNC_NAME) \
+	--region $(ALEXA_REGION) \
+	--zip-file 'fileb://build/deploy.zip'
 
 .PHONY: clean
 clean:

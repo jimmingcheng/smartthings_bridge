@@ -1,6 +1,7 @@
 *__pycache__/
 *~
-build
-lambda_admin
-resources
-venv
+.aws_service_settings
+build/
+resources/
+smartthings_lambda_admin/
+venv/
